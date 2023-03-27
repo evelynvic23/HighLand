@@ -1,0 +1,1768 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+
+body {
+  margin: 0 auto;
+  background-color: #f7efe5;
+}
+
+/*--------------------- ESTILIZAÇÃO HEADER ---------------------------*/
+#header {
+  box-sizing: border-box;
+  height: 200px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
+
+}
+a{
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.logo2 {
+  display: none;
+}
+
+
+.logoo {
+  width: 40%;
+  margin-top: 3%;
+  margin-left: 3%;
+  padding: 2%;
+}
+
+#menu {
+  margin-top: 6%;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+
+}
+
+#menu a {
+
+  display: block;
+  padding: 2.0rem;
+  color: #4d504d;
+  text-decoration: none;
+  font-family: 'Antonio', sans-serif;
+  font-size: 1em;
+ font-weight: bold;
+ 
+}
+
+#menu a:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  color: #4c8360e3;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+
+
+
+/*Barra de Pesquisa Começo*/
+.input-wrapper input {
+  background-color: #eee;
+  margin-left: 5%;
+  margin-top: 2%;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 115%;
+  border-radius: 1rem;
+  color: rgb(54, 129, 10);
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: rgb(41, 94, 34);
+}
+
+/*---------------------------- FIM DO HEADER ------------*/
+
+
+
+/*---------------------------tags para estilo do corrossel do banner HOME---------------*/
+#carouselExampleAutoplaying {
+  align-items: center;
+}
+
+
+.control-banner-prev {
+  margin-left: 10%;
+}
+
+.control-banner-next {
+  margin-right: 10%;
+}
+
+.d-block {
+  width: 500px;
+}
+
+.bg-body-tertiary {
+  padding: 20px;
+
+  margin: 0 auto;
+  width: 80%;
+}
+
+.navbar-brand,
+.nav-link {
+  font-size: 1.5em;
+  color: rgb(100, 67, 67);
+}
+
+.carousel-item {
+  height: 620px;
+}
+
+.form-control {
+  width: 400px;
+}
+
+#imgs1 {
+  height: 100%;
+}
+
+#imgs2 {
+  height: 100%;
+}
+
+#imgs3 {
+  height: 100%;
+}
+
+.container-fluid {
+  margin-left: 10%;
+}
+
+/*-----------tags para o estilo do carrossel de produtos da página home-------------------*/
+#carouselExample {
+  margin-top: 5%;
+}
+
+.alinhar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.carousel-control-prev-icon {
+  margin-left: 8%;
+}
+
+.carousel-control-next-icon {
+  margin-right: 8%;
+}
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon{
+  margin-bottom: 50%;
+  background-color: #a8a8a8c0;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+/*---------------------tags para estilo dos card de produtos da home-------------------*/
+.card {
+  width: 350px;
+  height: 420px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+  font-family: 'Ruda', sans-serif;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 175, 82, 0.575);
+}
+
+
+.card.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 45%;
+  bottom: 0.625em;
+}
+
+.card:hover::after {
+  bottom: 0;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  /* background: rgb(241, 241, 241); */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.imagensCard {
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------  Banner DE AVALIAÇÃO - HOME ---------------------------------------*/
+.avaliacao{
+  margin: 0 auto;
+  margin-top: 6%;
+  background-color: #e3dae4;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.todasAvaliacao{
+  padding: 2%;
+}
+.infoUsuario{
+  width: 100%;
+  padding: 2%;
+  margin-top: 3%;
+  background: #d0e9dd;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 15px 15px 30px #bebebe,
+  -15px -15px 30px #9b9797;
+}
+.tituloAvaliacao{
+  padding: 1%;
+  margin-left: 24%;
+  font-family: 'Raleway', sans-serif;
+  text-shadow:  rgba(0, 0, 0, 0.644) 0.1em 0.1em 0.4em;
+  color: #061a01;
+  font-weight: bold;
+}
+.imgUsuario{
+  background: linear-gradient(#9198e5, #712020);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.nomeUser{
+  margin-left: 3%;
+}
+.imgEnome{
+  display: flex;
+  flex-direction: row;
+}
+.modelo{
+  height: 935px;
+  width: 600px;
+}
+
+/* -----------------  Banner VERDE DE INFORMAÇÕES - HOME */
+.informacoesHome{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bannerInfor1img {
+  margin: 0 auto;
+  width: 700px;
+  height: 400px;
+  padding: 1%;
+
+}
+.bannerInfor2img {
+  margin: 0 auto;
+  width: 700px;
+  height: 400px;
+  padding: 1%;
+}
+
+
+
+
+/*--------------------ESTILO DE PRODUTOS-------------*/
+.bannerfixo1{
+  width: 100%;
+  height: 500px;
+}
+.bannerfixo2{
+  margin-left: 22%;
+  border-radius: 20px;
+  width: 60%;
+  height: 500px;
+}
+@media only screen and (max-width: 490px){
+  #header{
+    height: 100px;
+  }
+  .informacoesHome{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bannerInfor1img {
+    width: 100%;
+    height: 150px;
+  }
+  .bannerInfor2img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .bannerfixo1{
+    width: 100%;
+    height: 200px;
+  }
+  .bannerfixo2{
+    margin-left:10%;
+    margin-top:5%;
+    border-radius: 20px;
+    width: 80%;
+    height: 120px;
+  }
+
+
+  .avaliacao{
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 6%;
+    background-color: #e3dae4;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .todasAvaliacao{
+    padding: 2%;
+  }
+  .infoUsuario{
+    margin: 0 auto;
+    width: 90%;
+    padding: 2%;
+    font-size: 0.6em;
+    margin-top: 4%;
+  }
+  .tituloAvaliacao{
+    margin-left: 12%;
+  }
+  .imgUsuario{
+    height: 40px;
+    width: 40px;
+  }
+  .imgEnome{
+    display: flex;
+    flex-direction: row;
+  }
+  .modelo{
+    display: none;
+  }
+}
+/*-------------------ESTILO DA PAGINA SOBRE NOS-------------*/
+
+
+.container{
+  margin-top: 5%;
+}
+.justify-content-md-center{
+  margin-top: 3%;
+}
+.titulo-sobre{
+  padding: 2%;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(15, 56, 13); 
+  text-shadow:  rgba(0, 0, 0, 0.644) 0.1em 0.1em 0.2em;
+}
+
+.produto1sobre{
+  margin-left: 10%;
+  width: 50%;
+  height: 30%;
+}
+.areaSobrenos{
+  display: flex;
+  flex-direction: row;
+}
+.areaSobrenos2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+.infoSobreNos{
+  padding: 2%;
+}
+.texto-sobre, .texto-sobre2 {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-size: 1em;
+}
+.texto-sobre2{
+  margin-left: 17%;
+}
+.montanha{
+  width: 40%;
+  height: 20%;
+}
+
+.task {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: 5%;
+  width: 50%;
+  color: #2e2e2f;
+  cursor: pointer;
+  background-color: #e0d9d1;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  border: 3px dashed transparent;
+}
+
+.task:hover {
+  box-shadow: rgba(66, 3, 3, 0.3) 0px 2px 8px 0px;
+  border-color: rgba(10, 71, 4, 0.377) !important;
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+.tituloForm{
+  padding: 2%;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(15, 56, 13); 
+  text-shadow:  rgba(0, 0, 0, 0.644) 0.1em 0.1em 0.2em
+}
+.textoForm{
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-size: 1em;
+  width: 40%;
+}
+.caixasdoForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputFormSobre{
+  border: none;
+  padding: 5%;
+  margin-top: 8%;
+  border-radius: 1rem;
+  width: 140%;
+  background: #e0d9d1;
+  box-shadow: 5px 5px 20px #c5c5c5,
+         -5px -5px 20px #8a9c8a;
+  transition: 0.3s;
+ }
+ 
+ .inputFormSobre:focus {
+  outline-color: #c5b4b4;
+  background: #e0d9d1;
+  box-shadow: inset 5px 5px 20px #e0d9d1,
+         inset -5px -5px 20px #e0d9d1;
+  transition: 0.3s;
+ }
+
+ .button-formSobre {
+  padding: 15px 45px;
+  width: 150px;
+  margin-top: 5%;
+  background: #548142;
+  font-size: 17px;
+  font-weight: 500;
+  color: #181818;
+  border:none;
+  border-radius: 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+}
+
+.button-formSobre:hover {
+  animation: wind 2s ease-in-out infinite;
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  0% {
+    background-position: 50% 100%;
+  }
+
+  0% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  transition: all .5s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+}
+
+.button-formSobre:hover .icon-1 {
+  animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+  transform: rotate(10deg);
+}
+
+@keyframes slay-1 {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.icon-2 {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 12px;
+  transform-origin: 50% 0;
+  transform: rotate(10deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+}
+
+.button-formSobre .icon-2 {
+  animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+
+@keyframes slay-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.icon-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  transform-origin: 50% 0;
+  transform: rotate(-5deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+}
+
+.button-formSobre .icon-3 {
+  animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+
+@keyframes slay-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+ .montanhaMobile{
+  display: none;
+ }
+
+
+/* Footer */
+
+footer {
+  padding: 3%;
+  margin-top: 5%;
+  background-color: #ddd4cb
+}
+
+.pLogo {
+  width: 100%;
+}
+
+.pLogoimg {
+  width: 250PX;
+  height:250PX;
+}
+.conteudo-footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+/* /////////////////////////// Página produto sozinho //////////////////////// */
+#imagemProduto{
+
+  display: none;
+ 
+}
+#botao {
+  background-color: transparent;
+  border: 0.125em solid rgb(128, 126, 126);
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  height: 3.70em;
+  width: 100px;
+  outline: none;
+  text-align:center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ #botao:hover {
+  color: #000000;
+  background-color: rgb(150, 200, 150);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ }
+ 
+ #botao:active {
+  box-shadow: none;
+ }
+ .inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  width: 260px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 1em;
+  outline: none;
+  border: 2px solid rgb(128, 126, 126);
+  background-color: transparent;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(32, 31, 31);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: rgb(150, 200, 150);
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 200, 150);
+}
+
+.produtoPage{
+ 
+  width: 30%;
+}
+.produtoPage2{
+  display: none;
+
+}
+.produto{
+  width: 80%;
+}
+.produto-titulo{
+  font-family: 'Raleway', sans-serif;
+  color: rgb(60, 65, 60); 
+  text-shadow:  rgba(37, 36, 36, 0.644) 0.1em 0.1em 0.2em;
+  text-align:left;
+  font-size: 2em;
+}
+.descricao-produto{
+  text-align: center;
+  width: 70%;
+  font-size: 25px;
+  padding: 10%;
+
+  font-family: 'Raleway', sans-serif;
+}
+.produto:hover{
+  transform: scale(1.3);
+}
+.ladoDireito{
+  margin-top: 2%;
+  /* border: 2px solid black; */
+  width: 50%;
+  margin-left: 10%;
+}
+.completoPage{
+  /* border: 2px solid black; */
+  display: flex;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.produtoTexto{
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 40px;
+
+}
+
+
+/* Corner Effect */
+.corners { 
+  background: #f6f6f673;
+  height: 60px;
+  margin-top: 10%;
+  max-width: 200px;
+  position: relative;
+  width: 80%;
+  box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  margin-right: 65%;
+ 
+}
+.corners:after,
+.corners:before {
+  background: #0297341f;
+  content: '';
+  height: 35px;
+  position: absolute;
+  top: -13px;
+  width: 60px;
+  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
+}
+.corners:after {
+  left: -50px;
+  transform: rotate(-45deg);
+}
+.corners:before {
+  right: -50px;
+  transform: rotate(45deg);
+}
+.cent{
+  width: 250px;
+  padding: 2%;
+  justify-content: center;
+
+}
+.cent3{
+  display: flex;
+  display: inline-flex;
+  position: relative;
+}
+
+.linha{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+ }
+/*///////////////////////////////////////////////////////*/
+
+
+
+.textoT{
+  margin-left: 9%;
+  margin-top: 40%;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(60, 65, 60); 
+  text-shadow:  rgba(37, 36, 36, 0.644) 0.1em 0.1em 0.2em;
+  text-decoration: none;
+  color: #000000;
+  font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////// Fim Produtosss sozinho //////////////////////////////////////////////*/
+
+
+
+
+
+/* //////////////////////////////////////////////////////// Página Da Tabela /////////////////////////////////////////////////////*/
+
+table{
+  text-align: center;
+  width: 70%;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 25px;
+  box-shadow: 15px 15px 30px #555353,
+  -15px -15px 30px #8ae6a8;
+}
+.tabela{
+  margin-top: 10%;
+  margin-left: 29%;
+  
+}
+.tabela:hover {
+  transition: 1s;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////// Página Da Tabela fim /////////////////////////////////////////////////////*/
+
+
+
+
+@media only screen and (max-width: 490px){
+  /*------ RESPONSIVIDADE DA PAGINA SOBRE NOS------*/
+  .container{
+  margin-top: 0;
+    }
+  .titulo-sobre{
+      margin-top: 5%;
+      font-size: 1em;
+  }
+  .produto1sobre{
+     margin:0 auto;
+     width: 70%;
+     height: 30%;
+  }
+  .areaSobrenos{
+     display: flex;
+     flex-direction: column;
+  }
+  .texto-sobre, .texto-sobre2{
+     text-align: justify;
+     margin:0 auto;
+     font-size: 0.6em;
+     width: 80%;
+     margin-top: 1%;
+  }
+  .texto-sobre2{
+      text-align: left;
+      margin-left: 5%;
+  }
+  .montanha{
+      display: none;
+  }
+  .montanhaMobile{
+      display: block;
+     margin-left: 9%;
+     width: 50%;
+     height: 30%;
+  }
+  .task{
+      width: 80%; 
+  }
+  .form{
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+    }
+    .textoForm{
+      margin:0 auto;
+      width: 100%;
+    }
+    .tituloForm{
+      margin-left: 20%;
+    }
+    .faleConoscoTexto{
+      text-align: center;
+      width: 100%;
+      font-size: 0.8em;
+    }
+    .inputFormSobre{
+      width: 100%;
+     }
+     
+ .button-formSobre {
+  margin: 0 auto;
+  width: 110px;
+  margin-top: 5%;
+  background: #548142;
+  font-size: 10px;
+  font-weight: 500;
+  color: #181818;
+  border:none;
+  border-radius: 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+}
+.footer-sobre{
+  font-size: 0.5em;
+  padding: 4%;
+}
+.pLogoimg{
+  width: 200PX;
+  height:200PX;
+}
+}
+
+@media (max-width: 490px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #f7e7d1;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+
+  }
+
+
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    color: #332915;
+
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .logo2 {
+    display: block;
+    width: 30%;
+    margin-right: 33%;
+    margin-bottom: 3%;
+
+  }
+
+  .logoo {
+    display: none;
+  }
+
+  .search {
+    margin-top: 10%;
+  }
+
+  .search__button {
+    width: 10%;
+    border-radius: 100%;
+  }
+
+  .carousel-item {
+    height: 290px;
+  }
+
+  #imgs1 {
+    height: 100%;
+  }
+
+  #imgs2 {
+    height: 100%;
+  }
+
+  #imgs3 {
+    height: 100%;
+  }
+
+
+  /* Cards ---------------------------------*/
+
+  #carouselExample {
+    margin-top: 15%;
+  }
+
+
+  .card {
+
+    height: 280px;
+    margin: 2%;
+  }
+
+  .carouselExample {
+
+    height: 200px;
+  }
+
+  .card::after {
+    height: 70px;
+  }
+
+  .image {
+    /* background: rgb(241, 241, 241); */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .imagensCard {
+    width: 100%;
+    height: 100%;
+  }
+
+  #id {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  #id2 {
+    font-size: 10px;
+  }
+
+  #id3 {
+    font-size: 10px;
+  }
+
+  #id4 {
+    font-size: 10px;
+  }
+
+  #id5 {
+    font-size: 10px;
+  }
+
+  #id6 {
+    font-size: 10px;
+  }
+
+  .image {
+    /* background: rgb(241, 241, 241); */
+    width: 100%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+  }
+
+  .imagensCard {
+    width: 100%;
+    height: 80%;
+  }
+
+  .banner2 {
+    margin-top: -10%;
+  }
+
+  .textoFotter {
+    font-family: 'Antonio', sans-serif;
+    font-size: 16px;
+
+  }
+  .informacoesHome{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    
+  
+  }
+
+
+  .bannerInfor2img {
+    
+    width: 100%;
+    display: none;
+  
+  }
+
+
+
+  
+
+
+
+
+
+
+  /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
+
+
+
+
+  #valorFrete{
+    color: #042c01;
+    font-family: 'Karla', sans-serif;
+  
+  }.produtoPage{
+
+  display: none;
+
+}
+
+
+
+#imagemProduto{
+
+  display: block;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 16%;
+}
+.descricao-produto{
+text-align:justify;
+margin-left: 6%;
+/* border: 2px solid black; */
+font-family: 'Karla', sans-serif;
+font-size: 14px;
+width: 100%;
+}
+
+.ladoDireito{
+
+ 
+  width: 100%;
+  margin-right: 10%;
+  /* border: 2px solid black; */
+
+}
+.completoPage{
+  /* border: 2px solid black; */
+
+  display: flex;
+  width: 80%;
+}
+
+.produtoTexto{
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 25px;
+
+}
+.corners { 
+  background: #f6f6f673;
+  height: 50px;
+  margin: 50px auto;
+  max-width: 200px;
+  position: relative;
+  width: 50%;
+  box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 18px;
+  margin-right: 25%;
+}
+
+/* Corner Effect */
+.corners:after,
+.corners:before {
+  background: #0297341f;
+  content: '';
+  height: 31px;
+  position: absolute;
+  top: -7px;
+  width: 55px;
+  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
+}
+.corners:after {
+  left: -50px;
+  transform: rotate(-45deg);
+}
+.corners:before {
+  right: -50px;
+  transform: rotate(45deg);
+}
+.cent{
+  display: flex;
+  justify-content: left;
+  
+ 
+}
+
+
+#botao {
+
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-left: 17%;
+  width: 60%;
+  margin-top: 10%;
+ }
+ 
+ #botao:disabled {
+  pointer-events: none;
+ }
+ 
+ #botao:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ #botao:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+ .linha{
+  display: flex;
+  flex-direction: column;
+ }
+
+
+
+/*///////////////////////////////////////////////////////*/
+
+
+
+.input-groupP {
+  position: relative;
+}
+
+.inputP {
+  border: 3px solid #000;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.user-labelP {
+  position: absolute;
+  left: 15px;
+  color: #000;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 350ms;
+}
+
+.inputP:focus,
+inputP:valid {
+  outline: none;
+  --angle: 0deg;
+  border-bottom: 3px solid;
+  border-image: conic-gradient(from var(--angle), #2ae919, #2dad19, #70bf5f,#2ae919 , #9cf576) 1;
+  animation: 3s rotate9234 linear infinite;
+}
+
+@keyframes rotate9234 {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.inputP:focus~label,
+input:valid~label {
+  transform: translateY(265%) scale(1);
+ 
+  padding: 0 .9em;
+  color: #f7efe5;
+}
+
+
+.cent3{
+ 
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+
+
+.textoT{
+  font-family: 'Antonio', sans-serif;
+  text-decoration: none;
+  color: #302e2e;
+  font-size: 15px;
+  display: flex;
+  margin-top: -10%;
+ text-align: center;
+
+}
+
+
+
+
+/*/////////////////////////////Barra de pesquisa////////////////////////////////*/
+
+.input-wrapper{
+  margin-top: 4%;
+  width: 70%;
+}
+.barraa{
+
+  width: 20%;
+}
+
+
+/*///////////////////////////////////////////////////////////*/
+
+}
+/*/////////////////// TAMANHO TABLET //////////////////////*/
+@media only screen and (min-width: 480px) and (max-width: 1000px) {
+
+  .logoo {
+    width:150px;
+  }
+  
+  #menu {
+    margin-top: 6%;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  
+  }
+  
+  /*Barra de Pesquisa Começo*/
+  .input-wrapper input {
+    background-color: #eee;
+    margin-top: 2%;
+    width:10em;
+  }
+
+ 
+.carousel-item {
+  height: 400px;
+}
+
+
+.card {
+  width: 350px;
+  height: 420px;
+  padding: 1.2em;
+  padding-bottom: 0em;
+  font-family: 'Ruda', sans-serif
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 175, 82, 0.575);
+}
+
+
+.card.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+}
+
+.card .price {
+  position: absolute;
+  left: 45%;
+  top: 1em;
+  bottom: 2em;
+  color: #300c0c;
+  font-size: 1.2em;
+}
+
+
+.image {
+  /* background: rgb(241, 241, 241); */
+  width: 70%;
+  height: 70%;
+  display: grid;
+  place-items: center;
+}
+
+.imagensCard {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.infoUsuario{
+  width: 90%;
+  padding: 2%;
+  margin: 0 auto;
+  margin-top: 3%;
+  background: #d0e9dd;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 15px 15px 30px #bebebe,
+  -15px -15px 30px #9b9797;
+}
+
+.modelo{display: none;
+}
+
+/* -----------------  Banner VERDE DE INFORMAÇÕES - HOME */
+.informacoesHome{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.bannerInfor1img {
+  margin: 0 auto;
+  width: 550px;
+  height: 200px;
+
+}
+.bannerInfor2img {
+  margin: 0 auto;
+  width: 550px;
+  height: 270px;
+  padding: 1%;
+}
+
+.bannerfixo1{
+  width: 100%;
+  height: 500px;
+}
+.bannerfixo2{
+  border-radius: 20px;
+  width: 75%;
+  height: 300px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+
+.task {
+  width: 70%;
+}
+
+
+.inputFormSobre{
+  width: 100%;
+ }
+
+
+
+
+ #valorFrete{
+  color: #042c01;
+  font-family: 'Karla', sans-serif;
+
+}.produtoPage{
+
+display: none;
+
+}
+
+
+
+#imagemProduto{
+
+display: block;
+width: 80%;
+display: flex;
+justify-content: center;
+margin-left: 16%;
+}
+.descricao-produto{
+text-align: center;
+margin-left: 19%;
+/* border: 2px solid black; */
+font-family: 'Karla', sans-serif;
+font-size: 15px;
+}
+
+.ladoDireito{
+
+
+width: 100%;
+margin-right: 10%;
+/* border: 2px solid black; */
+
+}
+.completoPage{
+/* border: 2px solid black; */
+
+display: flex;
+width: 80%;
+}
+
+.produtoTexto{
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-size: 25px;
+
+}
+.corners { 
+background: #f6f6f673;
+height: 50px;
+margin: 50px auto;
+max-width: 200px;
+position: relative;
+width: 50%;
+box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-size: 18px;
+margin-right: 25%;
+}
+
+/* Corner Effect */
+.corners:after,
+.corners:before {
+background: #0297341f;
+content: '';
+height: 31px;
+position: absolute;
+top: -7px;
+width: 55px;
+box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
+}
+.corners:after {
+left: -50px;
+transform: rotate(-45deg);
+}
+.corners:before {
+right: -50px;
+transform: rotate(45deg);
+}
+.cent{
+display: flex;
+justify-content: left;
+
+
+}
+
+
+#botao {
+
+appearance: none;
+background-color: transparent;
+border: 0.125em solid #1A1A1A;
+border-radius: 0.9375em;
+box-sizing: border-box;
+color: #3B3B3B;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+min-height: 3.75em;
+min-width: 0;
+outline: none;
+padding: 1em 2.3em;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+will-change: transform;
+margin-left: 17%;
+width: 60%;
+margin-top: 10%;
+}
+
+#botao:disabled {
+pointer-events: none;
+}
+
+#botao:hover {
+color: #fff;
+background-color: #1A1A1A;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+#botao:active {
+box-shadow: none;
+transform: translateY(0);
+}
+.linha{
+display: flex;
+flex-direction: column;
+}
+
+
+
+/*///////////////////////////////////////////////////////*/
+
+
+
+.input-groupP {
+position: relative;
+}
+
+.inputP {
+border: 3px solid #000;
+background: none;
+padding: 1rem;
+font-size: 1rem;
+color: black;
+
+}
+
+.user-labelP {
+position: absolute;
+left: 15px;
+color: #000;
+pointer-events: none;
+transform: translateY(1rem);
+transition: 350ms;
+}
+
+.inputP:focus,
+inputP:valid {
+outline: none;
+--angle: 0deg;
+border-bottom: 3px solid;
+border-image: conic-gradient(from var(--angle), #2ae919, #2dad19, #70bf5f,#2ae919 , #9cf576) 1;
+animation: 3s rotate9234 linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+}
